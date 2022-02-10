@@ -1,0 +1,320 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+*{
+    /*reset altijd mee beginnen*/
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #5722CD;
+    --primary-color-light:#4845e4;
+    --primary-color-button:#ED4385;
+    --primary-color-plaintext:#0C0C0C;
+    --primary-color-floatingtext:#F2F0FF;
+    --primary-color-background:#F3F6F9;
+    --primary-color-servicetxt:#7A7A7A;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+/*    font-size: 20px;*/
+}
+h1, h2, h3{
+    font-family: 'Merriweather', serif;
+}
+p{
+    font-size: 21px;
+}
+
+/*tbv positionering kleur hero en navbar*/
+.outer-container{
+    background: rgb(87,34,205);
+    background: linear-gradient(30deg, rgba(87,34,205,1) 0%, rgba(87,34,205,0.5377732180477528) 72%, rgba(72,69,228,1) 99%);
+    background-color: var(--primary-color-light) ;
+    color: white;
+    font-size: 20px;
+    height: 650px;
+    padding: 25px;
+}
+/*navbar*/
+.navbar{
+    position: relative;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    margin: 20px 0;
+}
+.navbar li{
+    text-decoration-color: white;
+    list-style: none;
+    color: white;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar a:visited{
+    color: unset;
+}
+/*Opmaak in hero box*/
+.outer-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-section h1, .hero-section p{
+    text-align: center;
+}
+.hero-section{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.sqline{
+    padding: 50px;
+}
+/*herbruikbare button*/
+.cta-btn{
+    background-color: var(--primary-color-button);
+    color: white;
+    text-transform: uppercase;
+    height: 60px;
+    width: 220px;
+    /*bovenstaand was eerst anders*/
+    border: none;
+    box-shadow: #333333;
+    border-radius: 30px;
+}
+.swirl{
+    padding: 30px;
+}
+object{
+    color: red;
+}
+/*tbv positionering text hello en case studie in box*/
+.outer-container-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-0 {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 0px;
+    max-width: 700px;
+    line-height: 2.2em;
+}
+.container-0 h2{
+    color: var(--primary-color);
+    padding-bottom: 25px;
+}
+.container-0 p{
+    color: var(--primary-color-plaintext);
+    padding-top: 50px;
+}
+.container-0 a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/*herbruikbare afknotting achtergrond kleur
+principe is div over de gekleurde achtergrond aanbrengen.
+Bij voorkeur driehoek*/
+.skewed{
+    position: relative;
+    bottom: 50px;
+    height: 250px;
+    width: 400%;
+    color: black;
+    background-color: white;
+    transform: rotate(3deg);
+}
+.skewed2{
+    position: relative;
+    bottom: -100px;
+    height: 250px;
+    width: 400%;
+    color: black;
+    background-color: white;
+    transform: rotate(3deg);
+}
+
+/*tbv verspringende achter kleur, opdelen main was ff noodsprong*/
+main2{
+    background-color: var(--primary-color-background);
+}
+.work{
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+/*afbeeldingen centreren*/
+.laptops, .tijdschrift, .tablet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+/*afbeeldingen vershalen*/
+.laptops img, .tijdschrift img, .tablet img{
+    max-width: 95%;
+    height: auto;
+}
+/*zijkanten text verschalen*/
+.rolling, .variety, .worth{
+    padding: 20px;
+/*rondom alina ruimte creëren*/
+}
+.rolling p, .variety p, .worth p{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 400px;
+}
+.rolling a, .variety a, .worth a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+/*a:visited{
+    color: unset;
+}*/
+.container-4{
+    padding-top: 200px;
+}
+/*wrappen tbv raster in twee rijen van 3 met tussen afstanden*/
+.container-4 div, .container-5 div{
+    flex-wrap: wrap;
+    border: 2px var(--primary-color) solid;
+    padding: 20px;/*binnenranden blokken*/
+    margin: 20px;/*tussen de blokken*/
+    max-width: 450px;
+}
+
+.container-4 div p, .container-5 div p{
+    color: var(--primary-color-servicetxt);
+}
+
+.container-4 div h1, .container-5 div h1{
+    color: var(--primary-color);
+    padding-bottom: 30px;
+}
+
+/*niet meest ideale oplossing, zie ook opdelen main*/
+.form-box{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    display: block;
+    padding: 15px;
+    padding-top: 200px;
+    margin: auto;
+}
+.form h1, .form h2{
+    text-align: center;
+    color: white;
+}
+.form p{
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+.form-group-button{
+   /* background-color: #5722CD;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: auto;
+}
+.form label{
+    display: block;
+}
+.form input[type="text"], .form input[type="email"] ,.form textarea{
+    width: 500px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+label{
+    color: white;
+}
+/*footer eenmalig*/
+#main-footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.laptops{
+    order: 2;
+}
+.rolling{
+    order: 1;
+}
+.tijdschrift{
+    order: 1;
+}
+.variety{
+    order: 1;
+}
+.tablet{
+    order: 2;
+}
+.worth{
+    order: 1;
+}
+.webdesign{
+    flex: 1;
+    order: 1;
+}
+.webdev{
+    flex: 1;
+    order: 2;
+}
+.user{
+    flex: 1;
+    order: 3;
+}
+.logo{
+    flex: 1;
+    order: 1;
+}
+.seo{
+    flex: 1;
+    order: 2;
+}
+.copy{
+    flex: 1;
+    order: 3;
+}
+
+/*actie als scherm breder wordt*/
+@media screen and (min-width: 768px) {
+    .navbar ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .container-1{
+        display: flex;
+    }
+    .container-2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .container-3{
+        display: flex;
+    }
+    .container-4{
+        display: flex;
+    }
+    .container-5{
+        display: flex;
+    }
+
+}
